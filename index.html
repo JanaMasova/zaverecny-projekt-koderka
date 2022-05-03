@@ -1,0 +1,156 @@
+---
+layout: layout.njk
+---
+<div class="homepage-content">
+  <div class="homepage-content__photo-container">
+    <img
+      src="/images/Benatky_0304edit.jpg"
+      alt="Milan a Jana dělají obličeje"
+      class="homepage-conten__homepage-photo"
+    />
+  </div>
+
+  <div class="homepage-content__countdown-container">
+    <p id="homepage-content__days"></p>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Sep 17, 2022 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="homepage-content__countdown"
+        document.getElementById("homepage-content__days").innerHTML =
+          days;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          document.getElementById("homepage-content__days").innerHTML = 0;
+        }
+      }, 1000);
+    </script>
+
+    <div class="homepage-content__countdown-text days">
+      <p>Dnů</p>
+    </div>
+
+    <p id="homepage-content__hours"></p>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Sep 17, 2022 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="homepage-content__countdown"
+        document.getElementById("homepage-content__hours").innerHTML =
+          hours;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          document.getElementById(
+            "homepage-content__hours"
+          ).innerHTML = 0;
+        }
+      }, 1000);
+    </script>
+
+    <div class="homepage-content__countdown-text hours">
+      <p>Hodin</p>
+    </div>
+
+    <p id="homepage-content__minutes"></p>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Sep 17, 2022 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="homepage-content__countdown"
+        document.getElementById("homepage-content__minutes").innerHTML =
+          minutes;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          document.getElementById(
+            "homepage-content__minutes"
+          ).innerHTML = 0;
+        }
+      }, 1000);
+    </script>
+
+    <div class="homepage-content__countdown-text minutes">
+      <p>Minut</p>
+    </div>
+  </div>
+
+  <div class="text homepage-content__text">
+    <p>
+      Vítejte na naší svatební stránce! Stránku jsme vytvořily s cílem
+      zodpovědět všechny vaše dotazy, protože je nám jasné, že jich máte
+      spoustu, třeba „kdy a kde mám být?“, „kde budu sedět?“, „co si mám
+      vzít na sebe?“ apod. Věříme, že vám pomůže mít všechny informace na
+      jednom místě. Stejně tak doufáme, že web pomůže i nám.
+      <span class="homepage-content__text--bold"
+        >Vytvořili jsme totiž formulář pro potvrzení účasti, který prosím
+        vyplňte.</span
+      >
+    </p>
+  </div>
+  <div class="homepage-content__blockquote">
+    <blockquote class="blockquote homepage-content__quote">
+      There is a lot of things you need to get across this universe. Warp
+      drive… wormhole refractors… You know the thing you need most of all?
+      You need a hand to hold.
+    </blockquote>
+    <blockquote class="blockquote homepage-content__author">
+      – Doctor Who, Season 6, Episode 6
+    </blockquote>
+  </div>
+</div>
