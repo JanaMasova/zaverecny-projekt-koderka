@@ -46,42 +46,43 @@ body {
   color: #1e1e24;
 }
 
-.homepage-content {
+.content {
   font-size: 16px;
   margin: 20px;
 }
-.homepage-content__text {
+
+.content__text {
   margin-top: 40px;
 }
 
-.homepage-content__text--bold {
+.content__text--bold {
   font-weight: bold;
 }
 
-.homepage-content__quote {
+.content__quote {
   font-family: "Cinzel", serif;
   font-weight: 500;
   font-size: 24px;
   text-align: center;
 }
-.homepage-content__author {
+.content__author {
   font-weight: 500;
   font-size: 18px;
   text-align: right;
 }
-.homepage-content__blockquote {
+.content__blockquote {
   box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
   padding: 10px;
   margin-bottom: 50px;
 }
 
-.homepage-conten__homepage-photo {
+.conten__homepage-photo {
   width: 100%;
   border-radius: 3px;
   box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
 }
 
-.homepage-content__countdown-container {
+.content__countdown-container {
   font-family: "Cinzel", serif;
   font-weight: 500;
   font-size: 24px;
@@ -92,15 +93,15 @@ body {
   grid-auto-flow: dense;
 }
 
-#homepage-content__days {
+#content__days {
   order: 0;
 }
 
-#homepage-homepage-content__hours {
+#content__hours {
   order: 1;
 }
 
-#homepage-homepage-content__minutes {
+#content__minutes {
   order: 2;
 }
 
@@ -116,6 +117,28 @@ body {
   order: 5;
 }
 
+.content__header{
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 40px;
+  text-align: center;
+}
+
+.ceremony__photo,
+.ceremony__map{
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ceremony__map{
+  height: 300px;
+}
+
 @media screen and (min-width: 500px) {
   .header__menu {
     display: grid;
@@ -129,16 +152,30 @@ body {
     align-self: center;
   }
 
-  .homepage-content {
+  .content {
     max-width: 670px;
     margin-left: auto;
     margin-right: auto;
   }
-  .homepage-content__blockquote,
-  .homepage-content__text {
+  .content__blockquote,
+  .content__text {
     margin-left: 40px;
     margin-right: 40px;
   }
+
+  .ceremony__photo,
+  .ceremony__map{
+    width: 400px;
+}
+
+  .ceremony__map{
+    height: 400px;
+  }
+
+  .content__header{
+    text-align: left;
+  }
+
 }
 @media screen and (min-width: 780px) {
   .header__menu {
@@ -149,7 +186,44 @@ body {
     grid-row: 1;
   }
 
-  .homepage-content {
+  .content {
     max-width: 960px;
   }
+
+  .ceremony__map{
+    float: left;
+    margin-right: 20px;
+    margin-left: 40px;
+  }
+
+
+  .ceremony__time{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+
+  }
+  
+  .ceremony__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+  }
+
+  .content__header--right{
+    
+    justify-self: end;
+  }
+
+  .content__text--time{
+    margin-right: 0;
+    text-align: right;
+
+  }
+
+  .ceremony__photo{
+    margin-right: auto;
+    margin-left: auto;
+    grid-column: 2;
+  }*/
+
 }
