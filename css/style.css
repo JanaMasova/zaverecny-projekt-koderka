@@ -224,7 +224,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     grid-column: 2;
-    justify-content: center;
+    justify-items: center;
   }
 
 }
