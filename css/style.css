@@ -127,7 +127,8 @@ body {
 
 .ceremony__photo,
 .ceremony__map,
-.photogallery__photo{
+.photogallery__photo,
+.banquet__photo{
   display: block;
   border-radius: 3px;
   box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
@@ -143,6 +144,31 @@ body {
 .photogallery__text{
   text-align: center;
   margin-bottom: 20px;
+}
+
+.banquet__header{
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.banquet__header:after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 10em;
+  background-color: #5b5b66;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.banquet__menu{
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -196,10 +222,14 @@ body {
   .header__menu {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    margin-bottom: 50px;;
   }
   .header__icon {
     grid-row: 1;
   }
+
 
   .content {
     max-width: 960px;
@@ -242,6 +272,22 @@ body {
 
   .photogallery__photo{
     width: 85%;
+  }
+
+  .banquet__menu-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banquet__left-column{
+    margin-right: 50px;
+  }
+
+  .banquet__right-column{
+    margin-left: 50px;
+  }
+
+  .banquet__photo{
+    width: 500px;
   }
 
 }
