@@ -210,21 +210,20 @@ body {
   }
 
   .content__header--right{
-    
     justify-self: end;
   }
 
   .content__text--time{
-    margin-right: 0;
-    text-align: right;
-
+    margin-right: 20px;
+    align-self: center;  
   }
 
   .ceremony__photo{
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     grid-column: 2;
-    justify-items: center;
+    align-self: center;
   }
 
 }
