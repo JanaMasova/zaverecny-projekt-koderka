@@ -13,11 +13,11 @@ body {
 }
 
 .footer {
-  background-color: #1e1e24;
+  background-color: #39393A;
   color: #ebecf7;
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .header__quote {
@@ -126,10 +126,11 @@ body {
 }
 
 .ceremony__photo,
-.ceremony__map,
 .photogallery__photo,
 .banquet__photo,
-.schedule__photo{
+.schedule__photo,
+.ceremony__map,
+.thanks__photo{
   display: block;
   border-radius: 3px;
   box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
@@ -138,9 +139,6 @@ body {
   margin-right: auto;
 }
 
-.ceremony__map{
-  height: 300px;
-}
 
 .photogallery__text{
   text-align: center;
@@ -193,6 +191,81 @@ body {
   margin-left: 30px;
 }
 
+.confirmation__field{
+  margin-bottom: 10px;
+}
+
+.confirmation__field input,
+.confirmation__field textarea{
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #fbfbff;
+  border: 1px solid #1e1e24;
+  border-radius: 4px;
+}
+
+.confirmation__field input:focus,
+.confirmation__field textarea:focus,
+.confirmation__field select:focus{
+  outline: 0;
+  border: 2px solid #848FA5;
+  
+}
+
+.confirmation__label{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.confirmation__field--required{
+  color: red;
+}
+
+.confirmation__form{
+  width: 100%;
+  max-width: 400px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.confirmation__radio{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.confirmation__button{
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #C48F7F;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.confirmation__button:hover{
+  background-color: #b1715d;
+  cursor: pointer;
+}
+
+.confirmation__button-container{
+  text-align: right;
+}
+
+.thanks__text{
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+}
+
+.thanks__text--small{
+  text-align: center;
+  font-size: 22px;
+}
+
 @media screen and (min-width: 500px) {
   .header__menu {
     display: grid;
@@ -217,13 +290,18 @@ body {
     margin-right: 40px;
   }
 
-  .ceremony__photo,
-  .ceremony__map{
+  .ceremony__photo{
     width: 400px;
 }
 
+.thanks__photo{
+  width: 500px;
+}
+
   .ceremony__map{
-    height: 400px;
+    width: 350px;
+    height: 350px;
+
   }
 
   .content__header{
@@ -301,6 +379,7 @@ body {
   }
 
   .banquet__menu-container{
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

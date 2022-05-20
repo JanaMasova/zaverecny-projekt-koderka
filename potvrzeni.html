@@ -1,0 +1,125 @@
+---
+layout: layout.njk
+titile: Potvrzení účasti
+---
+
+<div class="confirmation content">
+    <div class="content__text text">
+        <p class="confirmation__text">
+        Potvrďte nám prosím účast a další dodatečné informace. Pokud nám budete potřebovat něco vzkázat, můžete použít kolonku vzkaz nebo nás kontaktovat pomocí kontaktních údajů, které jsou zašifrované na téhle stránce.
+    </p>
+    </div>
+
+  <form action="https://submit-form.com/4mESBvUK" method="post" class="confirmation__form">
+    <input
+    type="hidden"
+    name="_redirect"
+    value="https://milanajanaseberou.cz/dekujeme/"
+  />
+    
+    <div class="confirmation__field">
+    <label for="name" class="confirmation__label">Jméno<span class="confirmation__field--required">*</span>:</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Jméno"
+      autofocus
+      required
+    />
+</div>
+
+<div class="confirmation__field">
+    <label for="Surname" class="confirmation__label">Příjmení<span class="confirmation__field--required">*</span>:</label>
+    <input
+      type="text"
+      name="Surname"
+      id="Surname"
+      placeholder="Příjmení"
+      required
+    />
+</div>
+
+<div class="confirmation__field">
+    <label for="email" class="confirmation__label">E-mail<span class="confirmation__field--required">*</span>:</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      size="30"
+      placeholder="např. janamasova3@gmail.com"
+      required
+    />
+</div>
+
+    <div class="confirmation__field">
+    <label for="phone" class="confirmation__label">Telefon:</label>
+    <input
+      type="tel"
+      name="phone"
+      id="phone"
+      placeholder="např. 721281230"
+    />
+</div>
+
+<div class="confirmation__field">
+    <label for="diet" class="confirmation__label">Jídelní intolerance</label>
+    <select name="diet" id="diet">
+        <option>Žádná</option>
+        <option>Vegetarián</option>
+        <option>Vegan</option>
+        <option>Alergie na lepek</option>
+        <option>Alergie na laktózu</option>
+        <option>Jiná</option>
+    </select>
+</div>
+
+<div class="confirmation__field">
+    <label for="children" class="confirmation__label">Počet dětí do 10 let</label>
+    <select name="children" id="children">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+</div>
+
+<div class="confirmation__radio">
+        <label for="confirmation__radio" class="confirmation__label">Je potřeba dětská židlička?</label>
+    <input type="radio" name="highchair" id="highchair--yes" value="ano" />
+    <label for="highchair--yes">Ano</label>
+    <input type="radio" name="highchair" id="highchair--no" value="ne" />
+    <label for="highchair--no">Ne</label>
+</div>
+
+<div class="confirmation__radio">
+    <label for="confirmation__radio" class="confirmation__label">Na přípitek si vyberu...?</label>
+    <input type="radio" name="toast" id="toast--alcoholic" value="alko" />
+    <label for="toast--alcoholic">Alko</label>
+    <input type="radio" name="toast" id="toast--nonalcoholic" value="nealko" />
+    <label for="toast--nonalcoholic">Nealko</label>
+</div>
+
+
+<div class="confirmation__field">
+    <label for="song" class="confirmation__label">Jakou písničku chceš zahrát na večerní párty?</label>
+    <input
+      type="text"
+      name="song"
+      id="song"
+      placeholder="Interpret a název písničky"
+    />
+</div>
+
+<div class="confirmation__field">
+    <label for="message" class="confirmation__label">Vzkaz pro nás</label>
+    <textarea name="message" id="message" cols="30" rows="5"> </textarea>
+</div>
+
+<div class="confirmation__button-container">
+    <button type="submit" name="submit" class="confirmation__button">Odeslat</button>
+</div>
+  </form>
+
+
+</div>
