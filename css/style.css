@@ -9,6 +9,7 @@ html {
 
 body {
   margin: 0px;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -37,8 +38,12 @@ body {
   padding: 10px;
   text-transform: uppercase;
 }
-.header__link:active,
+
 .header__link:hover {
+  font-weight: bold;
+}
+
+.header__link--active{
   font-weight: bold;
 }
 
@@ -257,7 +262,7 @@ body {
 
 .thanks__text{
   font-weight: bold;
-  font-size: 64px;
+  font-size: 58px;
   text-align: center;
 }
 

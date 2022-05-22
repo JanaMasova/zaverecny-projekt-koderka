@@ -37,11 +37,11 @@
               class="header__homepage-icon"
           /></a>
         </div>
-        <a href="/obrad/" class="header__link header__ceremony">Obřad</a>
-        <a href="/hostina/" class="header__link header__banquet">Hostina</a>
-        <a href="/program/" class="header__link header__programm">Program</a>
-        <a href="/potvrzeni/" class="header__link header__form">Potvrzení účasti</a>
-        <a href="/fotogalerie/" class="header__link header__gallery">Fotogalerie</a>
+        <a href="/obrad/" class="header__link header__ceremony {{'header__link--active' if page.fileSlug === 'obrad'}}">Obřad</a>
+        <a href="/hostina/" class="header__link header__banquet {{'header__link--active' if page.fileSlug === 'hostina'}}">Hostina</a>
+        <a href="/program/" class="header__link header__programm {{'header__link--active' if page.fileSlug === 'program'}}">Program</a>
+        <a href="/potvrzeni/" class="header__link header__form {{'header__link--active' if page.fileSlug === 'potvrzeni'}}">Potvrzení účasti</a>
+        <a href="/fotogalerie/" class="header__link header__gallery {{'header__link--active' if page.fileSlug === 'fotogalerie'}}">Fotogalerie</a>
         <a href="#" class="header__link header__information">Praktické info</a>
       </nav>
     </header>
