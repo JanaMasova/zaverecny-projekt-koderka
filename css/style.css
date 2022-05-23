@@ -33,6 +33,14 @@ body {
   display: block;
 }
 
+.menu__toggler{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Cinzel", serif;
+
+}
+
 .header__link{
   border-bottom: 1px solid silver;
 }
