@@ -1,0 +1,20 @@
+---
+layout: layouts/general-layout.njk
+---
+
+    <main class="main">
+
+        <article class="content">
+            <h2 class="article__title content__header">{{title}}</h2>
+
+            <div class="article__content"> 
+                <p class="content__text text article__perex">{{perex}}</p>
+
+                {{ content | safe }}
+            </div>
+        </article>
+
+    </main>
+
+
+

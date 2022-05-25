@@ -38,7 +38,7 @@ body {
   text-align: center;
   font-weight: bold;
   font-family: "Cinzel", serif;
-
+  margin-bottom: 30px;
 }
 
 .header__link{
@@ -163,7 +163,8 @@ body {
 .banquet__photo,
 .schedule__photo,
 .ceremony__map,
-.thanks__photo{
+.thanks__photo,
+.article__photo{
   display: block;
   border-radius: 3px;
   box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
@@ -171,6 +172,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 
 .photogallery__text{
@@ -303,6 +306,16 @@ body {
   font-size: 22px;
 }
 
+.info-container{
+  box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.link__container{
+  text-align: right;
+}
+
 @media screen and (min-width: 500px) {
 
   .header__icon {
@@ -328,9 +341,9 @@ body {
     width: 400px;
 }
 
-.thanks__photo{
-  width: 500px;
-}
+  .thanks__photo{
+    width: 500px;
+  }
 
   .ceremony__map{
     width: 350px;

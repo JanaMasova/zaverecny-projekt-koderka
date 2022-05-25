@@ -1,0 +1,17 @@
+---
+layout: layouts/layout.njk
+title: Praktické info
+---
+
+<div class="info content">
+{% for article in collections.info %}
+
+    <div class="info-container">
+        <h2 class="content__header">{{ article.data.title }}</h2>
+        <p class="content__text text">{{ article.data.perex }}</p>
+        <p class="content__text text link__container"><a href="{{ article.url }}" class="info__link">Celý článek</a></p>
+    </div>
+
+{% endfor %}
+
+</div>
