@@ -316,6 +316,10 @@ body {
   text-align: right;
 }
 
+.article__graph{
+  width: 75vw;
+}
+
 @media screen and (min-width: 500px) {
 
   .header__icon {
@@ -366,6 +370,10 @@ body {
 
   .schedule__photo{
     width: auto;
+  }
+
+  .article__graph{
+    width: 600px;
   }
 
 }
@@ -457,6 +465,10 @@ body {
 
   .banquet__photo{
     width: 500px;
+  }
+
+  .article__graph{
+    width: 750px;
   }
 
 }
