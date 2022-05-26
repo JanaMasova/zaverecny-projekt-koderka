@@ -98,6 +98,14 @@ body {
   font-size: 24px;
   text-align: center;
 }
+
+.content__quote--small {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
 .content__author {
   font-weight: 500;
   font-size: 18px;
@@ -157,6 +165,15 @@ body {
   margin: 40px;
   text-align: center;
 }
+
+.content__header--small{
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 40px;
+  text-align: center;
+}
+
 
 .ceremony__photo,
 .photogallery__photo,
@@ -320,6 +337,26 @@ body {
   width: 75vw;
 }
 
+.staying__list{
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.staying__link{
+  color: #1e1e24;
+  text-transform: uppercase;
+}
+
+.staying__link:active,
+.staying__link:hover{
+  font-weight: bold;
+}
+
+.staying__list-item{
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 500px) {
 
   .header__icon {
@@ -467,8 +504,17 @@ body {
     width: 500px;
   }
 
+  .article__photo{
+    width: 600px;
+    margin-bottom: 30px;
+  }
+
   .article__graph{
     width: 750px;
+  }
+
+  .content__header--small{
+    text-align: left;
   }
 
 }
