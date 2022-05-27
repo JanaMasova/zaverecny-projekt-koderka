@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  
   font-family: "Poppins", sans-serif;
   position: relative;
 }
@@ -357,6 +358,23 @@ body {
   margin-bottom: 10px;
 }
 
+.dresscode{
+  display: block;
+}
+
+.glider-contain{
+  max-width: 60vw;
+}
+
+.glider figure{
+align-self: center;
+}
+
+
+.glider img{
+  max-width: 50vw;
+}
+
 @media screen and (min-width: 500px) {
 
   .header__icon {
@@ -515,6 +533,11 @@ body {
 
   .content__header--small{
     text-align: left;
+  }
+
+
+  .glider{
+    width: 50%;
   }
 
 }
