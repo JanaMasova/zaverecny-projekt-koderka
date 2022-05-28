@@ -431,7 +431,7 @@ body {
   }
 
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 800px) {
   .menu__toggler{
     display: none;
   }
