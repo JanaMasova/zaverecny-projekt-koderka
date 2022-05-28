@@ -358,21 +358,14 @@ body {
   margin-bottom: 10px;
 }
 
-.dresscode{
-  display: block;
+
+.glider-slide{
+  margin: auto;
+  align-self: center;
 }
 
-.glider-contain{
+.glider{
   max-width: 60vw;
-}
-
-.glider figure{
-align-self: center;
-}
-
-
-.glider img{
-  max-width: 50vw;
 }
 
 @media screen and (min-width: 500px) {
@@ -537,7 +530,11 @@ align-self: center;
 
 
   .glider{
-    width: 50%;
+    width: 60%;
+  }
+
+  .glider-slide{
+    margin: 60px;
   }
 
 }
