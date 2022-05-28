@@ -11,8 +11,7 @@ body {
   margin: 0px;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  
+  grid-template-rows: auto 1fr auto;  
   font-family: "Poppins", sans-serif;
   position: relative;
 }
@@ -22,7 +21,6 @@ body {
   color: #ebecf7;
   text-align: center;
   padding: 20px;
-  margin-top: 70px;
 }
 
 .menu__checkbox{
@@ -82,7 +80,10 @@ body {
 
 .content {
   font-size: 16px;
-  margin: 20px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .content__text {
@@ -115,7 +116,6 @@ body {
 .content__blockquote {
   box-shadow: 0px 4px 6px rgba(64, 123, 255, 0.1215686275);
   padding: 10px;
-  margin-bottom: 50px;
 }
 
 .conten__homepage-photo {
@@ -297,7 +297,7 @@ body {
 .confirmation__button{
   color: #ffffff;
   font-weight: 500;
-  background-color: #C48F7F;
+  background-color: #CEA79B;
   padding: 15px 25px;
   border: 0;
   border-radius: 50px;
@@ -436,8 +436,11 @@ body {
     grid-template-columns: repeat(7, 1fr);
     border-bottom: 1px solid silver;
     border-top: 1px solid silver;
-    margin-bottom: 50px;
     margin-top: 30px;
+  }
+  .header__quote{
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   .header__menu{
@@ -454,10 +457,18 @@ body {
     grid-row: 1;
   }
 
-
   .content {
-    max-width: 960px;
+    max-width: 980px;
+    padding-top: 50px;
+    position: relative;
   }
+
+  .homepage{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
 
   .ceremony__map{
     float: left;
@@ -482,9 +493,20 @@ body {
     justify-self: end;
   }
 
+  .content__header--left{
+    margin-top: 0;
+  }
+
   .content__text--time{
     margin-right: 20px;
     align-self: center;  
+  }
+
+  .content__countdown-container,
+  .homepage .content__text,
+  .homepage .content__blockquote{
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .ceremony__photo{
@@ -499,7 +521,6 @@ body {
   }
 
   .banquet__menu-container{
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -536,5 +557,29 @@ body {
   .glider-slide{
     margin: 60px;
   }
+
+  .content:before,
+  .content:after{
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 15px;
+  }
+
+  .content:before{
+    box-shadow: -15px 0 15px -15px inset;
+    left: -15px;
+    opacity: 0.2;
+  }
+
+  .content:after{
+    box-shadow: 15px 0 15px -15px inset;
+    right: -15px;
+    opacity: 0.2;
+  }
+
+
+
 
 }
