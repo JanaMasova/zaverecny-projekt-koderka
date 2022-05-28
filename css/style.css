@@ -94,6 +94,12 @@ body {
   font-weight: bold;
 }
 
+.redirection-confirmation,
+.redirection-confirmation:active{
+  color: #1e1e24;
+}
+
+
 .content__quote {
   font-family: "Cinzel", serif;
   font-weight: 500;
@@ -499,7 +505,7 @@ body {
 
   .content__text--time{
     margin-right: 20px;
-    align-self: center;  
+    margin-top: 0;
   }
 
   .content__countdown-container,
