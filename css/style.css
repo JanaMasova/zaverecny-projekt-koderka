@@ -234,6 +234,10 @@ body {
   padding-left: 0;
 }
 
+.banquet__menu li::first-letter{
+  font-weight: 500;
+}
+
 .schedule__container{
   display: grid;
   line-height: 2.5;
@@ -303,7 +307,7 @@ body {
 .confirmation__button{
   color: #ffffff;
   font-weight: 500;
-  background-color: #CEA79B;
+  background-color: #898ab5;
   padding: 15px 25px;
   border: 0;
   border-radius: 50px;
@@ -311,7 +315,7 @@ body {
 }
 
 .confirmation__button:hover{
-  background-color: #b1715d;
+  background-color: #6C6EA0;
   cursor: pointer;
 }
 
