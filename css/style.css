@@ -432,6 +432,18 @@ body {
 
 }
 @media screen and (min-width: 800px) {
+
+  body{
+    background-image: url(/images/35-352624_images-of-space-galaxy-transparent-transparent_V1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .header{
+    background-color: rgb(255, 255, 255, 0.8);
+  }
+
   .menu__toggler{
     display: none;
   }
@@ -440,8 +452,8 @@ body {
   .menu__container {
     display: grid !important;
     grid-template-columns: repeat(7, 1fr);
-    border-bottom: 1px solid silver;
-    border-top: 1px solid silver;
+    border-bottom: 1px solid rgb(192, 192, 192, 0.5);
+    border-top: 1px solid rgb(192, 192, 192, 0.5);
     margin-top: 30px;
   }
   .header__quote{
@@ -467,6 +479,7 @@ body {
     max-width: 980px;
     padding-top: 50px;
     position: relative;
+    background-color: rgb(255, 255, 255, 0.8);
   }
 
   .homepage{
