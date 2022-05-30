@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("libraries");
 
+    eleventyConfig.addPassthroughCopy("icons");
+
       // ...necháme, co už v konfiguraci je, a přidáme:
   return {
     // možné formáty šablon
